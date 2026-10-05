@@ -11,8 +11,7 @@
   <meta property="og:description" content="One board. Infinite possibilities. Models, specs, projects and a getting-started guide.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/hero.jpg">
-  <link rel="icon" type="image/png" href="images/ksa-avatar.png">
-  <link rel="apple-touch-icon" href="images/ksa-avatar.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307070c'/%3E%3Ccircle cx='32' cy='36' r='17' fill='%23ff2e74'/%3E%3Ccircle cx='32' cy='36' r='17' fill='none' stroke='%23ff7aa8' stroke-width='2' opacity='.5'/%3E%3Cpath d='M32 20c-6-7-17-4-17 3 6-1 12 1 17 6 5-5 11-7 17-6 0-7-11-10-17-3z' fill='%2357d97a'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -25,7 +24,20 @@
   <header class="nav" id="nav">
     <div class="nav-inner container">
       <a class="brand" href="#home" aria-label="Raspberry Pi Field Guide — home">
-        <img class="brand-avatar" src="images/ksa-avatar.png" alt="KSA emblem — ABO 3MAD" width="42" height="42">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="berry" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff2e74"/><stop offset="1" stop-color="#a855f7"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 16c-5-6.5-14.5-4-14.5 2.6 5-1 10.3.9 14.5 5.1 4.2-4.2 9.5-6.1 14.5-5.1C38.5 12 29 9.5 24 16z" fill="#57d97a"/>
+          <circle cx="24" cy="30.5" r="3.6" fill="url(#berry)"/>
+          <circle cx="16.5" cy="33.5" r="3.4" fill="url(#berry)"/>
+          <circle cx="31.5" cy="33.5" r="3.4" fill="url(#berry)"/>
+          <circle cx="20" cy="40" r="3.4" fill="url(#berry)"/>
+          <circle cx="28" cy="40" r="3.4" fill="url(#berry)"/>
+          <circle cx="24" cy="45" r="3" fill="url(#berry)"/>
+        </svg>
         <span class="brand-text">Raspberry&nbsp;Pi<span class="brand-sub">The Field Guide</span></span>
       </a>
 
@@ -64,7 +76,12 @@
             <a class="btn btn-ghost" href="#start">Get started in 4 steps <span aria-hidden="true">→</span></a>
           </div>
           <p class="byline">
-            <img class="byline-mark" src="images/ksa-avatar.png" alt="" width="24" height="24">
+            <svg class="byline-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 16c-5-6.5-14.5-4-14.5 2.6 5-1 10.3.9 14.5 5.1 4.2-4.2 9.5-6.1 14.5-5.1C38.5 12 29 9.5 24 16z" fill="#57d97a"/>
+              <circle cx="24" cy="30.5" r="3.6" fill="#ff2e74"/><circle cx="16.5" cy="33.5" r="3.4" fill="#ff2e74"/>
+              <circle cx="31.5" cy="33.5" r="3.4" fill="#ff2e74"/><circle cx="20" cy="40" r="3.4" fill="#ff2e74"/>
+              <circle cx="28" cy="40" r="3.4" fill="#ff2e74"/><circle cx="24" cy="45" r="3" fill="#ff2e74"/>
+            </svg>
             A field guide crafted by <strong>ABO&nbsp;3MAD</strong>
           </p>
 
@@ -625,7 +642,7 @@
     <div class="container footer-bottom">
       <p>© <span id="year">2026</span> Raspberry Pi Field Guide — an independent educational project.</p>
       <p class="signature">
-        <span class="author-badge" aria-hidden="true"><img src="images/ksa-avatar.png" alt="" width="34" height="34"></span>
+        <span class="author-badge" aria-hidden="true"><span>A3</span></span>
         Designed &amp; built by <strong>ABO&nbsp;3MAD</strong>
       </p>
     </div>
