@@ -1,3 +1,5 @@
 # Raspberry Pi — The Field Guide (by ABO 3MAD)
 User-agent: *
 Allow: /
+
+Sitemap: https://zxwxg.github.io/raspberry-pi/sitemap.xml
